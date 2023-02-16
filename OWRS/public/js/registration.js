@@ -10,7 +10,8 @@ var pagebtn = document.getElementById("pagebtn");
 var steplabel1 = document.getElementById("steplabel1");
 var steplabel2 = document.getElementById("steplabel2");
 var back =  document.getElementById("back");
-
+var positive = document.getElementById("positive");
+var negative = document.getElementById("negative");
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
@@ -22,13 +23,16 @@ btn.onclick = function() {
 pagebtn.onclick = function() {
     step1.style.display = "none";
     step2.style.display = "block";
-    steplabel1.style.backgroundColor = "transparent";
+    steplabel1.style.backgroundColor = "#a2a2a2";
     steplabel2.style.backgroundColor = "#85f937";
+}
+positive.onclick = function(){
+
 }
 back.onclick = function() {
     step2.style.display = "none";
     step1.style.display = "block";
-    steplabel2.style.backgroundColor = "transparent";
+    steplabel2.style.backgroundColor = "#a2a2a2";
     steplabel1.style.backgroundColor = "#85f937";
 }
 // When the user clicks on <span> (x), close the modal

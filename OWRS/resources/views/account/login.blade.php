@@ -10,17 +10,17 @@
     <link rel="stylesheet" href="{{url('/css/login.css')}}">
     <style>
         .modal{
-            display: none; /* Hidden by default */
-            position: fixed; /* Stay in place */
-            z-index: 1; /* Sit on top */
-            padding-top: 100px; /* Location of the box */
+            display: none;
+            position: fixed;
+            z-index: 1;
+            padding-top: 100px;
             left: 0;
             top: 0;
-            width: 100%; /* Full width */
-            height: 100%; /* Full height */
-            overflow: auto; /* Enable scroll if needed */
-            background-color: rgb(0,0,0); /* Fallback color */
-            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0,0.4);
         }
         .modalcontent{
             background-color: #fefefe;
@@ -35,6 +35,9 @@
         }
         #steplabel1{
             background-color: #85f937;
+        }
+        #steplabel2{
+            background-color: #a2a2a2;
         }
     </style>
 
@@ -132,7 +135,7 @@
                             </div>
                         </div>
                         <div>
-                            <button id="pagebtn" class="w-full mb-4 mt-8 bg-sky-400 hover:bg-sky-600 text-white font-bold py-2 px-4 rounded-lg focus:outline-none focus:shadow-outline transition hover:-translate-y-2" type="button">
+                            <button id="pagebtn" class="w-full mb-4 mt-8 bg-sky-400 hover:bg-sky-600 text-white font-bold py-2 px-4 rounded-lg focus:outline-none focus:shadow-outline transition hover:scale-110" type="button">
                                 Next
                             </button>
                         </div>
@@ -141,34 +144,50 @@
 
 
                     <div id="step2" class="transition">
-                        <div class="grid grid-cols-2 mb-4">
-                            <div class="mr-2">
-                                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline cursor-pointer" id="firstname" name="firstname" placeholder="First Name" required>
+
+                        <div class="mt-4">
+                            <p class="font-bold">Do you have your own water container at your house?</p>
+                        </div>
+                        <div class="">
+                            <input type="radio" id="negative" name="container" value="negative">
+                            <label for="contianer">I don't have my own container</label><br>
+                        </div>
+                        <div>
+                            <input type="radio" id="positive" name="container" value="positive">
+                            <label for="container">I have my own container</label><br>
+                        </div>
+                        <div>
+                            <h5 class="font-bold">Pick your container below and tell us how many you have.</h5>
+                            <p class="text-xs">You can select multiple if you have different kinds of container</p>
+                        </div>
+                        <div class="grid grid-cols-4">
+                            <div>
+                                <div class="h-32">
+                                    <img src="{{url('/assets/container1.jpg')}}" class="w-full h-full" alt="">
+                                </div>
+                                <input class="shadow appearance-none border rounded w-1/2  m-2 text-gray-700 leading-tight focus:outline-none focus:shadow-outline cursor-pointer" type="number" id="container1" name="container1"  required>
                             </div>
                             <div>
-                                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline cursor-pointer" id="lastname" name="lastname" placeholder="Last Name" required>
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline cursor-pointer" id="address" name="address" placeholder="Address" required>
-                        </div>
-                        <div class="mb-3">
-                            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline cursor-pointer" id="email" name="email" type="email" placeholder="Email" required>
-                        </div>
-                        <div class="mb-3">
-                            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline cursor-pointer" id="contactnumber" name="contactnumber" type="number" placeholder="Contact Number" required>
-                        </div>
-                        <div class="mb-3">
-                            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline cursor-pointer" id="username" name="username" placeholder="Username" required>
-                        </div>
-                        <div class="grid grid-cols-2 mb-4">
-                            <div class="mr-2">
-                                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline cursor-pointer" id="password" name="password" placeholder="Password" type="password" required>
+                                <div class="h-32">
+                                    <img src="{{url('/assets/container2.jpg')}}" class="w-full h-full" alt="">
+                                </div>
+                                <input class="shadow appearance-none border rounded w-1/2  m-2 text-gray-700 leading-tight focus:outline-none focus:shadow-outline cursor-pointer" type="number" id="container2" name="container2"  required>
                             </div>
                             <div>
-                                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline cursor-pointer" id="confrimpassword" name="confirmpassword" placeholder="Confirm Password" required>
+                                <div class="h-32">
+                                    <img src="{{url('/assets/container3.jpg')}}" class="w-full h-full" alt="">
+                                </div>
+                                <input class="shadow appearance-none border rounded w-1/2  m-2 text-gray-700 leading-tight focus:outline-none focus:shadow-outline cursor-pointer" type="number" id="container3" name="container3" required>
+                            </div>
+                            <div>
+                                <div class="h-32">
+                                    <img src="{{url('/assets/container4.jpg')}}" class="w-full h-full" alt="">
+                                </div>
+                                <input class="shadow appearance-none border rounded w-1/2  m-2 text-gray-700 leading-tight focus:outline-none focus:shadow-outline cursor-pointer" type="number" id="container4" name="container4" required>
                             </div>
                         </div>
+                        <p class="text-sm text-center">Note: If you ever have to change your default container, you can edit it later in your profile. </p>
+
                         <div>
                             <button class="w-full mt-8 bg-green-400 hover:bg-green-500 text-white font-bold py-2 px-4 rounded-lg focus:outline-none focus:shadow-outline transition hover:scale-110" type="button">
                                 Create Account
