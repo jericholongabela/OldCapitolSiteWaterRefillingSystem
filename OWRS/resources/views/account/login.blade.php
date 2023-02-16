@@ -135,7 +135,7 @@
                             </div>
                         </div>
                         <div>
-                            <button id="pagebtn" class="w-full mb-4 mt-8 bg-sky-400 hover:bg-sky-600 text-white font-bold py-2 px-4 rounded-lg focus:outline-none focus:shadow-outline transition hover:scale-110" type="button">
+                            <button id="pagebtn" class="w-full mb-4 mt-8 bg-sky-400 hover:bg-sky-600 text-white font-bold py-2 px-4 rounded-lg focus:outline-none focus:shadow-outline transition hover:scale-105" type="button">
                                 Next
                             </button>
                         </div>
@@ -189,10 +189,10 @@
                         <p class="text-sm text-center">Note: If you ever have to change your default container, you can edit it later in your profile. </p>
 
                         <div>
-                            <button class="w-full mt-8 bg-green-400 hover:bg-green-500 text-white font-bold py-2 px-4 rounded-lg focus:outline-none focus:shadow-outline transition hover:scale-110" type="button">
+                            <button class="w-full mt-8 bg-green-400 hover:bg-green-500 text-white font-bold py-2 px-4 rounded-lg focus:outline-none focus:shadow-outline transition hover:scale-105" type="button">
                                 Create Account
                             </button>
-                            <button id="back" class="w-full mb-4 mt-2 bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-lg focus:outline-none focus:shadow-outline transition hover:scale-110" type="button">
+                            <button id="back" class="w-full mb-4 mt-2 bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-lg focus:outline-none focus:shadow-outline transition hover:scale-105" type="button">
                                 Back
                             </button>
                         </div>

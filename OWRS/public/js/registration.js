@@ -1,8 +1,5 @@
 var modal = document.getElementById("registrationmodal");
-
-// Get the button that opens the modal
 var btn = document.getElementById("modalbtn");
-
 var container = document.getElementById("maincontainer");
 var step1  = document.getElementById("step1");
 var step2  = document.getElementById("step2");
@@ -12,10 +9,13 @@ var steplabel2 = document.getElementById("steplabel2");
 var back =  document.getElementById("back");
 var positive = document.getElementById("positive");
 var negative = document.getElementById("negative");
-// Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
+var contianer1 = document.getElementById("container1");
+var contianer2 = document.getElementById("container2");
+var contianer3 = document.getElementById("container3");
+var contianer4 = document.getElementById("container4");
 
-// When the user clicks the button, open the modal
+
 btn.onclick = function() {
   modal.style.display = "block";
   container.style.filter = "blur(8px)";
@@ -26,8 +26,17 @@ pagebtn.onclick = function() {
     steplabel1.style.backgroundColor = "#a2a2a2";
     steplabel2.style.backgroundColor = "#85f937";
 }
+negative.onclick = function(){
+    contianer1.style.cursor = "not-allowed";
+    contianer2.style.cursor = "not-allowed";
+    contianer3.style.cursor = "not-allowed";
+    contianer4.style.cursor = "not-allowed";
+}
 positive.onclick = function(){
-
+    contianer1.style.cursor = "auto";
+    contianer2.style.cursor = "auto";
+    contianer3.style.cursor = "auto";
+    contianer4.style.cursor = "auto";
 }
 back.onclick = function() {
     step2.style.display = "none";
@@ -35,13 +44,10 @@ back.onclick = function() {
     steplabel2.style.backgroundColor = "#a2a2a2";
     steplabel1.style.backgroundColor = "#85f937";
 }
-// When the user clicks on <span> (x), close the modal
 span.onclick = function() {
     modal.style.display = "none";
     container.style.filter = "none";
 }
-
-// When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
