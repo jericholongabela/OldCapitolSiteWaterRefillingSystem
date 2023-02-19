@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\HomepageController;
+use App\Http\Controllers\Authentication_Controller;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,4 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'App\Http\Controllers\LoginController@view');
+Route::get('/', [Authentication_Controller::class, 'view']);
+Route::post('/registration', [Authentication_Controller::class, 'register']);
+Route::post('/login', [Authentication_Controller::class, 'login']);
+Route::get('/home', [HomepageController::class, 'view'])->name('home');
+
