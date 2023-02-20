@@ -37,7 +37,37 @@
             </div>
 
             <div>
-                <p class="text-lg font-bold sm:ml-12">Know more about water</p>
+                <p class="text-lg font-bold sm:ml-12 text-center sm:text-left">Know more about water</p>
+                <div class="w-full flex justify-center items-center h-96">
+                    <div class="w-4/5 flex overflow-x-auto overflow-y-hidden scroll-smooth">
+
+                        <button class="w-72 h-72 bg-sky-300 rounded-xl shrink-0 drop-shadow-xl hover:scale-105 m-6 transition">
+                            <div class="flex w-full h-full items-center">
+                                <p class="text-4xl font-bold text-left m-3">Some shit about water</p>
+                            </div>
+                        </button>
+                        <button class="w-72 h-72 bg-sky-300 rounded-xl shrink-0 drop-shadow-xl hover:scale-105 m-6 transition">
+                            <div class="flex w-full h-full items-center">
+                                <p class="text-4xl font-bold text-left m-3">Some shit about water</p>
+                            </div>
+                        </button>
+                        <button class="w-72 h-72 bg-sky-300 rounded-xl shrink-0 drop-shadow-xl hover:scale-105 m-6 transition">
+                            <div class="flex w-full h-full items-center">
+                                <p class="text-4xl font-bold text-left m-3">Some shit about water</p>
+                            </div>
+                        </button>
+                        <button class="w-72 h-72 bg-sky-300 rounded-xl shrink-0 drop-shadow-xl hover:scale-105 m-6 transition">
+                            <div class="flex w-full h-full items-center">
+                                <p class="text-4xl font-bold text-left m-3">Some shit about water</p>
+                            </div>
+                        </button>
+                        <button class="w-72 h-72 bg-sky-300 rounded-xl shrink-0 drop-shadow-xl hover:scale-105 m-6 transition">
+                            <div class="flex w-full h-full items-center">
+                                <p class="text-4xl font-bold text-left m-3">Some shit about water</p>
+                            </div>
+                        </button>
+                    </div>
+                </div>
             </div>
 
         </div>

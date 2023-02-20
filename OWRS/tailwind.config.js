@@ -10,6 +10,7 @@ module.exports = {
     colors: {
         transparent: 'transparent',
         current: 'currentColor',
+        'sky-300': '#67e8f9',
         'sky-400': '#38bdf8',
         'sky-500': '#0ea5e9',
         'sky-600': '#0284c7',
