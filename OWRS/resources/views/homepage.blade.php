@@ -4,33 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="{{'/assets/logo2.png'}}" type="image/x-icon">
     <title>Homepage</title>
     @vite('resources/css/app.css')
+    <link rel="stylesheet" href="{{url('/css/login.css')}}">
 </head>
 <body>
     <div class="w-full h-screen">
-        <div class="h-12 bg-sky-400">
-            <div class=" h-full w-full grid grid-cols-5">
-                <a href="#" class="my-auto mx-auto flex flex-cols-2">
-                    <img src="{{url('/assets/home.png')}}" class="w-8 h-8  mr-1" alt="">
-                    <p class="text-center my-auto hidden sm:block">Home</p>
-                </a>
-                <a href="#" class="my-auto mx-auto flex flex-cols-2">
-                    <img src="{{url('/assets/placeorder.png')}}" class="w-8 h-8  mr-1" alt="">
-                    <p class="text-center my-auto hidden sm:block">Place Order</p>
-                </a>
-                <div class="my-auto mx-auto bg-silver lg:w-48 md:w-32 w-24 rounded-xl">
-                    <p class="text-center my-auto">Active Order</p>
+        <x-Header/>
+        <div>
+            <div class="flex h-48 justify-center items-center">
+                <div class="w-96 grid grid-cols-3">
+                    <div>
+                        <div class="w-24 h-24 rounded-md border-4 border-red-500 mx-auto flex justify-center items-center hover:-translate-y-0.5 shadow-lg">
+                            <p class="text-6xl">3</p>
+                        </div>
+                        <p class="text-center font-bold">On Queue</p>
+                    </div>
+                    <div>
+                        <div class="w-24 h-24 rounded-md border-4 border-amber-500 mx-auto flex justify-center items-center hover:-translate-y-0.5 shadow-lg">
+                            <p class="text-6xl">3</p>
+                        </div>
+                        <p class="text-center font-bold">Processing</p>
+                    </div>
+                    <div>
+                        <div class="w-24 h-24 rounded-md border-4 border-green-400 mx-auto flex justify-center items-center hover:-translate-y-0.5 shadow-lg">
+                            <p class="text-6xl">3</p>
+                        </div>
+                        <p class="text-center font-bold">To Deliver</p>
+                    </div>
                 </div>
-                <a href="#" class="my-auto mx-auto flex flex-cols-2">
-                    <img src="{{url('/assets/history.png')}}" class="w-8 h-8 mr-1" alt="">
-                    <p class="text-center my-auto hidden sm:block">History</p>
-                </a>
-                <a href="#" class="my-auto mx-auto flex flex-cols-2">
-                    <img src="{{url('/assets/profile.png')}}" class="w-8 h-8  mr-1" alt="">
-                    <p class="text-center my-auto hidden sm:block">Profile</p>
-                </a>
             </div>
+
+            <div>
+                <p class="text-lg font-bold sm:ml-12">Know more about water</p>
+            </div>
+
         </div>
     </div>
 </body>

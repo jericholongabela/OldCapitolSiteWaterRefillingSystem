@@ -18,7 +18,7 @@ module.exports = {
         'green-600': '#65a30d',
         'red-500': '#ef4444',
         'red-600': '#dc2626',
-        'midnight': '#121063',
+        'amber-500': '#f59e0b',
         'metal': '#565584',
         'tahiti': '#3ab7bf',
         'silver': '#ecebff',
