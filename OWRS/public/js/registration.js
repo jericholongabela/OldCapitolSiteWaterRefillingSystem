@@ -27,16 +27,16 @@ pagebtn.onclick = function() {
     steplabel2.style.backgroundColor = "#85f937";
 }
 negative.onclick = function(){
-    contianer1.style.cursor = "not-allowed";
-    contianer2.style.cursor = "not-allowed";
-    contianer3.style.cursor = "not-allowed";
-    contianer4.style.cursor = "not-allowed";
+    contianer1.disabled = true;
+    contianer2.disabled = true;
+    contianer3.disabled = true;
+    contianer4.disabled = true;
 }
 positive.onclick = function(){
-    contianer1.style.cursor = "auto";
-    contianer2.style.cursor = "auto";
-    contianer3.style.cursor = "auto";
-    contianer4.style.cursor = "auto";
+    contianer1.disabled = false;
+    contianer2.disabled = false;
+    contianer3.disabled = false;
+    contianer4.disabled = false;
 }
 back.onclick = function() {
     step2.style.display = "none";
