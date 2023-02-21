@@ -20,6 +20,7 @@ module.exports = {
         'red-500': '#ef4444',
         'red-600': '#dc2626',
         'amber-500': '#f59e0b',
+        'gray-400' : '#94a3b8',
         'metal': '#565584',
         'tahiti': '#3ab7bf',
         'silver': '#ecebff',

@@ -8,9 +8,31 @@
     <title>Homepage</title>
     @vite('resources/css/app.css')
     <link rel="stylesheet" href="{{url('/css/login.css')}}">
+
+    <style>
+        .modal{
+            display: none;
+            position: fixed;
+            z-index: 1;
+            padding-top: 100px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0,0.4);
+        }
+        .modalcontent{
+            background-color: #fefefe;
+            margin: auto;
+            padding: 10px;
+        }
+    </style>
 </head>
 <body>
     <div class="w-full h-screen">
+        <div>
         <x-Header/>
         <div>
             <div class="flex h-48 justify-center items-center">
@@ -41,27 +63,27 @@
                 <div class="w-full flex justify-center items-center h-96">
                     <div class="w-4/5 flex overflow-x-auto overflow-y-hidden scroll-smooth">
 
-                        <button class="w-72 h-72 bg-sky-300 rounded-xl shrink-0 drop-shadow-xl hover:scale-105 m-6 transition">
+                        <button id="buttonone" type="button" class="w-72 h-72 bg-sky-300 rounded-xl shrink-0 shadow-lg hover:drop-shadow-xl hover:scale-105 m-6 transition">
+                            <div class="flex w-full h-full items-center">
+                                <p class="text-4xl font-bold text-left m-3">How does water affect our lives?</p>
+                            </div>
+                        </button>
+                        <button id="buttontwo" class="w-72 h-72 bg-sky-300 rounded-xl shrink-0 shadow-lg hover:drop-shadow-xl hover:scale-105 m-6 transition">
                             <div class="flex w-full h-full items-center">
                                 <p class="text-4xl font-bold text-left m-3">Some shit about water</p>
                             </div>
                         </button>
-                        <button class="w-72 h-72 bg-sky-300 rounded-xl shrink-0 drop-shadow-xl hover:scale-105 m-6 transition">
+                        <button id="buttonthree" class="w-72 h-72 bg-sky-300 rounded-xl shrink-0 shadow-lg hover:drop-shadow-xl hover:scale-105 m-6 transition">
                             <div class="flex w-full h-full items-center">
                                 <p class="text-4xl font-bold text-left m-3">Some shit about water</p>
                             </div>
                         </button>
-                        <button class="w-72 h-72 bg-sky-300 rounded-xl shrink-0 drop-shadow-xl hover:scale-105 m-6 transition">
+                        <button class="w-72 h-72 bg-sky-300 rounded-xl shrink-0 shadow-lg hover:drop-shadow-xl hover:scale-105 m-6 transition">
                             <div class="flex w-full h-full items-center">
                                 <p class="text-4xl font-bold text-left m-3">Some shit about water</p>
                             </div>
                         </button>
-                        <button class="w-72 h-72 bg-sky-300 rounded-xl shrink-0 drop-shadow-xl hover:scale-105 m-6 transition">
-                            <div class="flex w-full h-full items-center">
-                                <p class="text-4xl font-bold text-left m-3">Some shit about water</p>
-                            </div>
-                        </button>
-                        <button class="w-72 h-72 bg-sky-300 rounded-xl shrink-0 drop-shadow-xl hover:scale-105 m-6 transition">
+                        <button class="w-72 h-72 bg-sky-300 rounded-xl shrink-0 shadow-lg hover:drop-shadow-xl hover:scale-105 m-6 transition">
                             <div class="flex w-full h-full items-center">
                                 <p class="text-4xl font-bold text-left m-3">Some shit about water</p>
                             </div>
@@ -71,6 +93,18 @@
             </div>
 
         </div>
+        </div>
+
     </div>
+
+    <div id="informationmodal" class="modal">
+        <div class="modalcontent transition w-96 lg:w-1/3 md:w-1/2 sm:w-96 shadow-xl rounded-xl hover:drop-shadow-xl">
+            <span class="close float-right text-lg font-bold cursor-pointer rounded-full hover:bg-red-600 px-2 transition hover:-translate-y-1">&times;</span>
+            <p id="content1">Hello WOrld</p>
+        </div>
+    </div>
+
+
+    <script src="{{url('/js/homepage.js')}}"></script>
 </body>
 </html>
