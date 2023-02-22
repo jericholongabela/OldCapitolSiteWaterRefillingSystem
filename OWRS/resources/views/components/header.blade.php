@@ -5,7 +5,7 @@
                 <img src="{{url('/assets/home.png')}}" class="w-6 h-6 sm:mr-1 " alt="">
                 <p class="text-center my-auto hidden sm:block">Home</p>
             </a>
-            <a href="/placeorder" class="my-auto mx-auto flex flex-cols-2 hover:bg-sky-500 rounded-full sm:px-2 sm:py-1 p-1 hover:border-2 border-sky-600">
+            <a href="/place-order" class="my-auto mx-auto flex flex-cols-2 hover:bg-sky-500 rounded-full sm:px-2 sm:py-1 p-1 hover:border-2 border-sky-600">
                 <img src="{{url('/assets/placeorder.png')}}" class="w-6 h-6  sm:mr-1" alt="">
                 <p class="text-center my-auto hidden sm:block">Place Order</p>
             </a>
