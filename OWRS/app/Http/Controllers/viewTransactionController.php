@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Customer;
 use Illuminate\Http\Request;
 
-class placeOrderController extends Controller
+class viewTransactionController extends Controller
 {
 
     public function View (){
@@ -13,6 +13,6 @@ class placeOrderController extends Controller
 
         $customer_data = Customer::where('userID','=',$session_email)->first();
 
-        return view('placeordertest',['users'=>$customer_data]);
+        return view('viewtransaction',['users'=>$customer_data]);
     }
 }
