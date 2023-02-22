@@ -16,8 +16,11 @@ class transaction extends Model
         'contactNumber',
         'prefferedTime',
         'status',
+        'container1',
+        'container2',
+        'container3',
+        'container4',
+        'price',
     ];
-    protected $primaryKey = [
-        'refID',
-    ];
+    protected $primaryKey = 'refID';
 }

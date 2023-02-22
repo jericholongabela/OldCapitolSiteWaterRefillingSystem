@@ -21,6 +21,11 @@ return new class extends Migration
             $table->string('contactNumber');
             $table->string('prefferedTime')->nullable();
             $table->string('status');
+            $table->integer('container1')->nullable();
+            $table->integer('container2')->nullable();
+            $table->integer('container3')->nullable();
+            $table->integer('container4')->nullable();
+            $table->integer('price');
             $table->timestamps();
         });
     }

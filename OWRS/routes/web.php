@@ -28,5 +28,6 @@ Route::get('/logout', [logoutController::class, 'logout']);
 Route::post('/edit_container', [ContainerEditor::class, 'update']);
 Route::post('/edit_personalin_formation', [PersonalInfoEditor::class, 'update']);
 Route::get('/place-order', [placeOrderController::class, 'view']);
+Route::post('/placingyourorder', [placeOrderController::class, 'transact']);
 
 
