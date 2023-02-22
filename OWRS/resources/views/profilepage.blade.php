@@ -45,7 +45,7 @@
             <div class="w-full">
                 <div class="md:w-2/3 w-full mx-auto">
                     <div class="w-full mt-4 hover:scale-105 transition">
-                        <div class="w-4/5 rounded-xl border border-gray-400 shadow-xl mx-auto my-8">
+                        <div class="w-4/5 rounded-xl border border-gray-400 shadow-xl mx-auto my-8 overflow-hidden">
                             <div class="w-full border-b border-gray-400 flex">
                                 <p class="font-bold text-lg text-green-500  ml-2 basis-11/12">Your personal information</p>
                                 <button id="edit" type="button" class="font-bold text-center basis-1/12 mr-4 hover:scale-110 text-sm">Edit</button>
@@ -157,16 +157,16 @@
                                 @csrf
                                 <div id="form1">
                                     <div class="mx-auto w-4/5 my-2">
-                                        <input type="text" class="w-full p-1 m-1 rounded-md shadow-md hover:scale-105 transition" id="name" name="name" placeholder="Your name">
+                                        <input type="text" class="w-full p-1 m-1 rounded-md shadow-md hover:scale-105 transition" id="name" name="name" placeholder="{{$users->name}}">
                                     </div>
                                     <div class="mx-auto w-4/5 my-2">
-                                        <input type="text" class="w-full p-1 m-1 rounded-md shadow-md hover:scale-105 transition" id="address" name="address" placeholder="Address">
+                                        <input type="text" class="w-full p-1 m-1 rounded-md shadow-md hover:scale-105 transition" id="address" name="address" placeholder="{{$users->address}}">
                                     </div>
                                     <div class="mx-auto w-4/5 my-2">
-                                        <input type="text" class="w-full p-1 m-1 rounded-md shadow-md hover:scale-105 transition" id="email" name="email" placeholder="Email">
+                                        <input type="text" class="w-full p-1 m-1 rounded-md shadow-md hover:scale-105 transition" id="email" name="email" placeholder="{{$users->email}}">
                                     </div>
                                     <div class="mx-auto w-4/5 my-2">
-                                        <input type="text" class="w-full p-1 m-1 rounded-md shadow-md hover:scale-105 transition" id="contactNumber" name="contactNumber" placeholder="Contact Number">
+                                        <input type="text" class="w-full p-1 m-1 rounded-md shadow-md hover:scale-105 transition" id="contactNumber" name="contactNumber" placeholder="{{$users->contactNumber}}">
                                     </div>
                                 </div>
                                 <div class=" mx-auto py-2 flex">
@@ -193,7 +193,7 @@
                                 <img src="{{url('/assets/container1.jpg')}}" class="w-full h-full" alt="">
                             </div>
                             <div class="w-12  mx-auto">
-                                <input class="shadow appearance-none border rounded w-full text-gray-700 leading-tight focus:outline-none focus:shadow-outline cursor-pointer hover:scale-105 transition " type="number" id="container1" name="container1">
+                                <input class="shadow appearance-none border rounded w-full text-gray-700 leading-tight focus:outline-none focus:shadow-outline cursor-pointer hover:scale-105 transition " type="number" id="container1" name="container1" placeholder="{{$users->container1}}">
                             </div>
                         </div>
                         <div>
@@ -201,7 +201,7 @@
                                 <img src="{{url('/assets/container2.jpg')}}" class="w-full h-full" alt="">
                             </div>
                             <div class="w-12  mx-auto">
-                                <input class="shadow appearance-none border rounded w-full text-gray-700 leading-tight focus:outline-none focus:shadow-outline cursor-pointer hover:scale-105 transition" type="number" id="container2" name="container2">
+                                <input class="shadow appearance-none border rounded w-full text-gray-700 leading-tight focus:outline-none focus:shadow-outline cursor-pointer hover:scale-105 transition" type="number" id="container2" name="container2" placeholder="{{$users->container2}}">
                             </div>
                         </div>
                         <div>
@@ -209,7 +209,7 @@
                                 <img src="{{url('/assets/container3.jpg')}}" class="w-full h-full" alt="">
                             </div>
                             <div class="w-12  mx-auto">
-                                <input class="shadow appearance-none border rounded w-full text-gray-700 leading-tight focus:outline-none focus:shadow-outline cursor-pointer hover:scale-105 transition" type="number" id="container3" name="container3" >
+                                <input class="shadow appearance-none border rounded w-full text-gray-700 leading-tight focus:outline-none focus:shadow-outline cursor-pointer hover:scale-105 transition" type="number" id="container3" name="container3" placeholder="{{$users->container3}}" >
                             </div>
                         </div>
                         <div>
@@ -217,7 +217,7 @@
                                 <img src="{{url('/assets/container4.jpg')}}" class="w-full h-full" alt="">
                             </div>
                             <div class="w-12  mx-auto">
-                                <input class="shadow appearance-none border rounded w-full text-gray-700 leading-tight focus:outline-none focus:shadow-outline cursor-pointer hover:scale-105 transition" type="number" id="container4" name="container4" >
+                                <input class="shadow appearance-none border rounded w-full text-gray-700 leading-tight focus:outline-none focus:shadow-outline cursor-pointer hover:scale-105 transition" type="number" id="container4" name="container4" placeholder="{{$users->container4}}">
                             </div>
                         </div>
                     </div>
