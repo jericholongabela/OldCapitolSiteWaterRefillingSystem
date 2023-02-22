@@ -8,6 +8,7 @@ use App\Http\Controllers\logoutController;
 use App\Http\Controllers\ContainerEditor;
 use App\Http\Controllers\PersonalInfoEditor;
 use App\Http\Controllers\placeOrderController;
+use App\Http\Controllers\viewTransactionController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -29,5 +30,5 @@ Route::post('/edit_container', [ContainerEditor::class, 'update']);
 Route::post('/edit_personalin_formation', [PersonalInfoEditor::class, 'update']);
 Route::get('/place-order', [placeOrderController::class, 'view']);
 Route::post('/placingyourorder', [placeOrderController::class, 'transact']);
-
+Route::get('/viewtransaction', [viewTransactionController::class, 'view']);
 

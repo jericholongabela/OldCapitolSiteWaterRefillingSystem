@@ -24,10 +24,10 @@
                 <div class="md:w-5/6 w-full mx-15 hover:scale-105 transition">
                     <div class="w-full rounded-xl border shadow-xl mx-15 my-8">
                         <div class="sm:ml-8 ml-4 flex flex-row my-2 justify-evenly font-semibold">
-                            <p class="text-lg my-2">Transaction Number: {{$users->name}}</p>
-                            <p class="text-lg my-2">Date: {{$users->address}}</p>
-                            <p class="text-lg my-2">Price: {{$users->email}}</p>
-                            <p class="text-lg my-2">Delivered: {{$users->contactNumber}}</p>
+                            <p class="text-lg my-2">Transaction Number: </p>
+                            <p class="text-lg my-2">Date: </p>
+                            <p class="text-lg my-2">Price: </p>
+                            <p class="text-lg my-2">Delivered: </p>
                         </div>
                     </div>
                 </div>
