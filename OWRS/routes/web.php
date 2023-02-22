@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomepageController;
 use App\Http\Controllers\Authentication_Controller;
 use App\Http\Controllers\profilepageController;
+use App\Http\Controllers\placeorderController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,4 +21,4 @@ Route::post('/registration', [Authentication_Controller::class, 'register']);
 Route::post('/login', [Authentication_Controller::class, 'login']);
 Route::get('/home', [HomepageController::class, 'view'])->name('home');
 Route::get('/profile', [profilepageController::class, 'view']);
-
+Route::get('/place-order', [placeOrderController::class, 'View']);
