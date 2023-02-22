@@ -168,7 +168,7 @@
                                 @enderror
                             </div>
                             <div>
-                                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline cursor-pointer" id="password_confirmation" name="password_confirmation" placeholder="Confirm Password">
+                                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline cursor-pointer" id="password_confirmation" name="password_confirmation" type='password' placeholder="Confirm Password">
                             </div>
                         </div>
                         <div>

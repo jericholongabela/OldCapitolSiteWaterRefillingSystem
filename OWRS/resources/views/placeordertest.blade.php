@@ -27,10 +27,10 @@
                             <button class="font-bold text-center basis-1/12 mr-4 hover:scale-110 text-sm">Edit</button>
                         </div>
                         <div class="sm:ml-8 ml-4">
-                            <p class="text-lg my-2">Mark Vincent Divida</p>
-                            <p class="text-lg my-2">Address</p>
-                            <p class="text-lg my-2">Email</p>
-                            <p class="text-lg my-2">Contect Number</p>
+                            <p class="text-lg my-2">{{$users->name}}</p>
+                            <p class="text-lg my-2">{{$users->address}}</p>
+                            <p class="text-lg my-2">{{$users->email}}</p>
+                            <p class="text-lg my-2">{{$users->contactNumber}}</p>
                         </div>
                     </div>
                 </div>
@@ -70,19 +70,70 @@
                             <p class="font-bold text-lg text-green-500  ml-2 basis-11/12">Step 3: View order container</p>
                             <button class="font-bold text-center basis-1/12 mr-4 hover:scale-110 text-sm">Edit</button>
                         </div>
-                        <div class="sm:mx-8 mx-4 my-2">
-                            <div class="w-full flex flex-wrap">
-                                <div class="w-1/6">
-                                    <div class="w-16 h-16 border border-gray-400 rounded-md">
-                                        <img src="{{url('/assets/container1.jpg')}}" alt="container1" class="w-full h-full">
+
+                        @if($users->container1 != NULL)
+                            <div class="sm:mx-8 mx-4 my-2">
+                                <div class="w-full flex flex-wrap">
+                                    <div class="w-1/6">
+                                        <div class="w-16 h-16 border border-gray-400 rounded-md">
+                                            <img src="{{url('/assets/container1.jpg')}}" alt="container1" class="w-full h-full">
+                                        </div>
+                                    </div>
+                                    <div class="w-5/6 flex flex-wrap items-center">
+                                        <p class="font-bold ml-8 text-md text-left w-2/3">4 Litter container</p>
+                                        <p class="font-bold ml-8 text-md text-right">{{$users->container1}}</p>
                                     </div>
                                 </div>
-                                <div class="w-5/6 flex flex-wrap items-center">
-                                    <p class="font-bold ml-8 text-md text-left w-2/3">4 Litter container</p>
-                                    <p class="font-bold ml-8 text-md text-right">Qty. 2</p>
+                            </div>
+                            @endif
+
+                            @if($users->container2 != NULL)
+                            <div class="sm:mx-8 mx-4 my-2">
+                                <div class="w-full flex flex-wrap">
+                                    <div class="w-1/6">
+                                        <div class="w-16 h-16 border border-gray-400 rounded-md">
+                                            <img src="{{url('/assets/container2.jpg')}}" alt="container2" class="w-full h-full">
+                                        </div>
+                                    </div>
+                                    <div class="w-5/6 flex flex-wrap items-center">
+                                        <p class="font-bold ml-8 text-md text-left w-2/3">10 Litter mini water container</p>
+                                        <p class="font-bold ml-8 text-md text-right">{{$users->container2}}</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                            @endif
+
+                            @if($users->container3 != NULL)
+                            <div class="sm:mx-8 mx-4 my-2">
+                                <div class="w-full flex flex-wrap">
+                                    <div class="w-1/6">
+                                        <div class="w-16 h-16 border border-gray-400 rounded-md">
+                                            <img src="{{url('/assets/container3.jpg')}}" alt="container2" class="w-full h-full">
+                                        </div>
+                                    </div>
+                                    <div class="w-5/6 flex flex-wrap items-center">
+                                        <p class="font-bold ml-8 text-md text-left w-2/3">20 Litter container jug</p>
+                                        <p class="font-bold ml-8 text-md text-right">{{$users->container3}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            @endif
+
+                            @if($users->container4 != NULL)
+                            <div class="sm:mx-8 mx-4 my-2">
+                                <div class="w-full flex flex-wrap">
+                                    <div class="w-1/6">
+                                        <div class="w-16 h-16 border border-gray-400 rounded-md">
+                                            <img src="{{url('/assets/container4.jpg')}}" alt="container2" class="w-full h-full">
+                                        </div>
+                                    </div>
+                                    <div class="w-5/6 flex flex-wrap items-center">
+                                        <p class="font-bold ml-8 text-md text-left w-2/3">18.9 Litter gallon</p>
+                                        <p class="font-bold ml-8 text-md text-right">{{$users->container4}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            @endif
                     </div>
                 </div>
 
