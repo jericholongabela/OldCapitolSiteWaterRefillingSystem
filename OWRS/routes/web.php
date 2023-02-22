@@ -7,6 +7,7 @@ use App\Http\Controllers\profilepageController;
 use App\Http\Controllers\logoutController;
 use App\Http\Controllers\ContainerEditor;
 use App\Http\Controllers\PersonalInfoEditor;
+use App\Http\Controllers\placeOrderController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -26,5 +27,6 @@ Route::get('/profile', [profilepageController::class, 'view'])->middleware('logi
 Route::get('/logout', [logoutController::class, 'logout']);
 Route::post('/edit_container', [ContainerEditor::class, 'update']);
 Route::post('/edit_personalin_formation', [PersonalInfoEditor::class, 'update']);
+Route::get('/place-order', [placeOrderController::class, 'view']);
 
 

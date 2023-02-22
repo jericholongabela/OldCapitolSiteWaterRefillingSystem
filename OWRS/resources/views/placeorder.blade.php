@@ -29,9 +29,9 @@
                     </div>
                     <div class="flex justify-center my-4">
                         <form class="flex flex-row justify-center">
-                            <input name="time" type="text"" class="border rounded-md w-1/12 mx-1 text-center">
+                            <input name="time" type="text" class="border rounded-md w-1/12 mx-1 text-center">
                             <p><b>:</b></p>
-                            <input name="time" type="text"" class="border rounded-md w-1/12 mx-1 text-center">
+                            <input name="time" type="text" class="border rounded-md w-1/12 mx-1 text-center">
                             <input name="ampm" id="am" type="radio" class="mx-1">
                             <label for="am">AM</label>
                             <input name="ampm" id="pm" type="radio" class="mx-1">

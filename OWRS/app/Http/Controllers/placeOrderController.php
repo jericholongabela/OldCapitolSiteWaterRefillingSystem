@@ -7,6 +7,6 @@ use Illuminate\Http\Request;
 class placeOrderController extends Controller
 {
     public function View (){
-        return View('placeorder');
+        return View('placeordertest');
     }
 }
