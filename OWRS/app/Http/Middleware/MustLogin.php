@@ -16,7 +16,7 @@ class MustLogin
      */
     public function handle(Request $request, Closure $next)
     {
-        if(!Session()->has('loginId')){
+        if(!Session()->has('userID')){
             return redirect()->route('login')->with('error', 'You have to login first.');
         }
         return $next($request);

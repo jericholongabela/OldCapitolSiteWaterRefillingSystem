@@ -5,6 +5,8 @@ use App\Http\Controllers\HomepageController;
 use App\Http\Controllers\Authentication_Controller;
 use App\Http\Controllers\profilepageController;
 use App\Http\Controllers\logoutController;
+use App\Http\Controllers\ContainerEditor;
+use App\Http\Controllers\PersonalInfoEditor;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -22,5 +24,7 @@ Route::post('/login', [Authentication_Controller::class, 'login']);
 Route::get('/home', [HomepageController::class, 'view'])->name('home')->middleware('loginchecker');
 Route::get('/profile', [profilepageController::class, 'view'])->middleware('loginchecker');
 Route::get('/logout', [logoutController::class, 'logout']);
+Route::post('/edit_container', [ContainerEditor::class, 'update']);
+Route::post('/edit_personalin_formation', [PersonalInfoEditor::class, 'update']);
 
 

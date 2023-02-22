@@ -65,7 +65,9 @@ class Authentication_Controller extends Controller
                 'error' => 'Wrong email or password.',
             ]);
         }
-        $request->session()->put('loginId',$user->email);
+        $request->session()->put('userID',$user->userID);
+
         return redirect()->route('home');
         }
+
 }
