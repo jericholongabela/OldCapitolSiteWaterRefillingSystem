@@ -24,5 +24,6 @@ class Customer extends Authenticatable
     protected $hidden = [
         'password',
     ];
+    protected $primaryKey = 'userID';
 
 }

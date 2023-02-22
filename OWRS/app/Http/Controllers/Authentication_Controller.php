@@ -58,13 +58,16 @@ class Authentication_Controller extends Controller
 
     public function login(Request $request){
         $user = Customer::where('email','=',$request->email)->first();
+        $credentials = $request->only('email', 'password');
 
-        if(!Auth::attempt(['email'=>$request->email, 'password' => $request->password])){
+        if(!Auth::attempt($credentials)){
             return back()->withErrors([
                 'error' => 'Wrong email or password.',
             ]);
         }
-        $request->session()->put('loginId',$user->id);
+        $request->session()->put('userID',$user->userID);
+
         return redirect()->route('home');
         }
+
 }

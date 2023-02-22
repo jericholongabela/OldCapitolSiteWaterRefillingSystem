@@ -3,10 +3,15 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Customer;
 
 class profilepageController extends Controller
 {
     public function view(){
-        return view('profilepage');
+        $session_email = session('userID');
+
+        $customer_data = Customer::where('userID','=',$session_email)->first();
+
+        return view('profilepage',['users'=>$customer_data]);
     }
 }
