@@ -78,12 +78,12 @@
                                 <p class="text-4xl font-bold text-left m-3">Some shit about water</p>
                             </div>
                         </button>
-                        <button class="w-72 h-72 bg-sky-300 rounded-xl shrink-0 shadow-lg hover:drop-shadow-xl hover:scale-105 m-6 transition">
+                        <button id="buttonfour" class="w-72 h-72 bg-sky-300 rounded-xl shrink-0 shadow-lg hover:drop-shadow-xl hover:scale-105 m-6 transition">
                             <div class="flex w-full h-full items-center">
                                 <p class="text-4xl font-bold text-left m-3">Some shit about water</p>
                             </div>
                         </button>
-                        <button class="w-72 h-72 bg-sky-300 rounded-xl shrink-0 shadow-lg hover:drop-shadow-xl hover:scale-105 m-6 transition">
+                        <button id="buttonfive" class="w-72 h-72 bg-sky-300 rounded-xl shrink-0 shadow-lg hover:drop-shadow-xl hover:scale-105 m-6 transition">
                             <div class="flex w-full h-full items-center">
                                 <p class="text-4xl font-bold text-left m-3">Some shit about water</p>
                             </div>
@@ -97,10 +97,38 @@
 
     </div>
 
-    <div id="informationmodal" class="modal">
+    <div id="informationmodal1" class="modal">
         <div class="modalcontent transition w-96 lg:w-1/3 md:w-1/2 sm:w-96 shadow-xl rounded-xl hover:drop-shadow-xl">
             <span class="close float-right text-lg font-bold cursor-pointer rounded-full hover:bg-red-600 px-2 transition hover:-translate-y-1">&times;</span>
-            <p id="content1">Hello WOrld</p>
+            <p id="content1">Hello World</p>
+        </div>
+    </div>
+
+    <div id="informationmodal2" class="modal">
+        <div class="modalcontent transition w-96 lg:w-1/3 md:w-1/2 sm:w-96 shadow-xl rounded-xl hover:drop-shadow-xl">
+            <span class="close float-right text-lg font-bold cursor-pointer rounded-full hover:bg-red-600 px-2 transition hover:-translate-y-1">&times;</span>
+            <p id="content2">ayaya ayaya</p>
+        </div>
+    </div>
+
+    <div id="informationmodal3" class="modal">
+        <div class="modalcontent transition w-96 lg:w-1/3 md:w-1/2 sm:w-96 shadow-xl rounded-xl hover:drop-shadow-xl">
+            <span class="close float-right text-lg font-bold cursor-pointer rounded-full hover:bg-red-600 px-2 transition hover:-translate-y-1">&times;</span>
+            <p id="content3">jessie kadusale</p>
+        </div>
+    </div>
+
+    <div id="informationmodal4" class="modal">
+        <div class="modalcontent transition w-96 lg:w-1/3 md:w-1/2 sm:w-96 shadow-xl rounded-xl hover:drop-shadow-xl">
+            <span class="close float-right text-lg font-bold cursor-pointer rounded-full hover:bg-red-600 px-2 transition hover:-translate-y-1">&times;</span>
+            <p id="content4">miguel liwanag</p>
+        </div>
+    </div>
+
+    <div id="informationmodal5" class="modal">
+        <div class="modalcontent transition w-96 lg:w-1/3 md:w-1/2 sm:w-96 shadow-xl rounded-xl hover:drop-shadow-xl">
+            <span class="close float-right text-lg font-bold cursor-pointer rounded-full hover:bg-red-600 px-2 transition hover:-translate-y-1">&times;</span>
+            <p id="content5">vincent divida</p>
         </div>
     </div>
 
