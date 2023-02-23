@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="h-full w-full">
-        <x-Header/>
+        <x-Header time="{{$transaction->prefferedTime}}"/>
     <div class="flex flex-wrap justify-between">
         <div class="sm:w-2/3 w-full mt-6">
             <div name="transaction-details-table" class="mx-5 border-2 rounded-lg border-neutral-600">

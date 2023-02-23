@@ -22,6 +22,12 @@ class placeOrderController extends Controller
         $price4 = 40;
         $totalprice = 0;
 
+        $transaction = transaction::where('userID','=',$session_email)->where('status','=',"pending")->first();
+        if($transaction == NULL){
+            $transaction = transaction::where('userID','=',$session_email)->where('status','=',"cancelled")->first();
+            $transaction->status = "Cancelled";
+        }
+
         if($customer_data->container1 != NULL){
             $customer_data->price1 = $price1 * $customer_data->container1;
             $totalprice = $totalprice +  $customer_data->price1;
@@ -50,7 +56,7 @@ class placeOrderController extends Controller
             $customer_data->price4 = 0;
 
         $customer_data->totalprice  = $totalprice;
-        return View('placeordertest',['users'=>$customer_data]);
+        return View('placeordertest',['users'=>$customer_data, 'transaction'=>$transaction]);
     }
 
     public function transact(Request $request){

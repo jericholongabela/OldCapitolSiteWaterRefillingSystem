@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Profile</title>
+    <link rel="icon" href="{{'/assets/logo2.png'}}" type="image/x-icon">
+    <title>OWRS-Profile</title>
 
     @vite('resources/css/app.css')
     <link rel="stylesheet" href="{{url('/css/login.css')}}">
@@ -36,7 +37,7 @@
     <div class="w-full">
         <div id="body" >
 
-        <x-Header/>
+            <x-Header time="{{$transaction->prefferedTime}}"/>
         @error('error')
             <p class="text-green-500 text-s font-bold italic text-center pt-4">{{ $message }}</p>
         @enderror

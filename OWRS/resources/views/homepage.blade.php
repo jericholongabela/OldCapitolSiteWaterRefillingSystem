@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" href="{{'/assets/logo2.png'}}" type="image/x-icon">
-    <title>Homepage</title>
+    <title>OWRS-Homepage</title>
     @vite('resources/css/app.css')
     <link rel="stylesheet" href="{{url('/css/login.css')}}">
 
@@ -33,7 +33,7 @@
 <body>
     <div class="w-full h-screen">
         <div>
-        <x-Header/>
+            <x-Header time="{{$transaction->prefferedTime}}"/>
         <div>
             <div class="flex h-48 justify-center items-center">
                 <div class="w-96 grid grid-cols-3">

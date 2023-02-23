@@ -58,6 +58,7 @@ class ActiveOrderController extends Controller
         $transaction = transaction::find($id);
 
         $transaction->status = "Cancelled";
+        $transaction->prefferedTime = "Cancelled";
         $transaction->save();
         return redirect()->route('placeorder');
     }
