@@ -29,10 +29,9 @@
                     </div>
                     <div class="flex justify-center my-4">
                         <form class="flex flex-row justify-center">
-                            <input name="time" type="text" class="border rounded-md w-1/12 mx-1 text-center">
+                            <input name="time" type="text"" class="border rounded-md w-1/12 mx-1 text-center">
                             <p><b>:</b></p>
-                            <input name="time" type="text" class="border rounded-md w-1/12 mx-1 text-center">
-                            <input name="ampm" id="am" type="radio" class="mx-1">
+                            <input name="time" type="text"" class="border rounded-md w-1/12 mx-1 text-center">
                             <label for="am">AM</label>
                             <input name="ampm" id="pm" type="radio" class="mx-1">
                             <label for="pm">PM</label>
@@ -63,7 +62,6 @@
                             <p class="self-center text-purple w-2/12"><b>P35.00</b></p>
                             <p class="self-center text-neutral-600 w-2/12"><b>Qty.2</b></p>
                         </div>
-
                     </div>
                 </div>
                 <div name="step4" class="border-2 mx-8 my-8 w-5/12 rounded-lg border-neutral-600">
