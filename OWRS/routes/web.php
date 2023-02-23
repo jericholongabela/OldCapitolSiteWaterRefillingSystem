@@ -10,6 +10,7 @@ use App\Http\Controllers\PersonalInfoEditor;
 use App\Http\Controllers\placeOrderController;
 use App\Http\Controllers\ActiveOrderController;
 use App\Http\Controllers\viewTransactionController;
+use App\Http\Controllers\adminController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
