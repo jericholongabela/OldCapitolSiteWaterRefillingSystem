@@ -27,10 +27,11 @@ Route::post('/login', [Authentication_Controller::class, 'login']);
 Route::get('/home', [HomepageController::class, 'view'])->name('home')->middleware('loginchecker');
 Route::get('/profile', [profilepageController::class, 'view'])->middleware('loginchecker');
 Route::get('/logout', [logoutController::class, 'logout']);
-Route::post('/edit_container', [ContainerEditor::class, 'update']);
-Route::post('/edit_personalin_formation', [PersonalInfoEditor::class, 'update']);
-Route::get('/place-order', [placeOrderController::class, 'view']);
-Route::post('/placingyourorder', [placeOrderController::class, 'transact']);
-Route::get('/active-order', [ActiveOrderController::class, 'view']);
-Route::get('/viewtransaction', [viewTransactionController::class, 'view']);
+Route::post('/edit_container', [ContainerEditor::class, 'update'])->middleware('loginchecker');
+Route::post('/edit_personalin_formation', [PersonalInfoEditor::class, 'update'])->middleware('loginchecker');
+Route::get('/place-order', [placeOrderController::class, 'view'])->middleware('loginchecker')->name('placeorder');
+Route::post('/placingyourorder', [placeOrderController::class, 'transact'])->middleware('loginchecker');
+Route::get('/active-order', [ActiveOrderController::class, 'view'])->middleware('loginchecker')->name('activeorder');
+Route::get('/viewtransaction', [viewTransactionController::class, 'view'])->middleware('loginchecker');
+Route::get('/cancellingorder', [ActiveOrderController::class, 'cancel'])->middleware('loginchecker');
 

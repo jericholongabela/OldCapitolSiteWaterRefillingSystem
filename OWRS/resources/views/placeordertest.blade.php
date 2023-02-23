@@ -12,7 +12,6 @@
     <title>Place Order</title>
 
     @vite('resources/css/app.css')
-    <link rel="stylesheet" href="{{url('/css/login.css')}}">
 
     <style>
         .modal{
@@ -98,7 +97,8 @@
                                         </div>
                                     </div>
                                     <div class="w-5/6 flex flex-wrap items-center">
-                                        <p class="font-bold ml-8 text-md text-left w-2/3">4 Litter container</p>
+                                        <p class="font-bold ml-8 text-md text-left sm:w-auto w-full">4 Litter container</p>
+                                        <p class="font-bold ml-8 text-md text-right font-bold text-purple">P {{$users->price1}}.00</p>
                                         <p class="font-bold ml-8 text-md text-right">Qty. {{$users->container1}}</p>
                                     </div>
                                 </div>
@@ -114,8 +114,9 @@
                                         </div>
                                     </div>
                                     <div class="w-5/6 flex flex-wrap items-center">
-                                        <p class="font-bold ml-8 text-md text-left w-2/3">10 Litter mini water container</p>
-                                        <p class="font-bold ml-8 text-md text-right">Qty. {{$users->container2}}</p>
+                                        <p class="font-bold ml-8 text-md text-left sm:w-auto w-full">10 Litter mini water container</p>
+                                        <p class="font-bold ml-8 text-md text-right font-bold text-purple ,d:1/2">P {{$users->price2}}.00</p>
+                                        <p class="font-bold ml-8 text-md text-right">Qty. {{$users->container2}} </p>
                                     </div>
                                 </div>
                             </div>
@@ -130,7 +131,8 @@
                                         </div>
                                     </div>
                                     <div class="w-5/6 flex flex-wrap items-center">
-                                        <p class="font-bold ml-8 text-md text-left w-2/3">20 Litter container jug</p>
+                                        <p class="font-bold ml-8 text-md text-left sm:w-auto w-full">20 Litter container jug</p>
+                                        <p class="font-bold ml-8 text-md text-right font-bold text-purple">P {{$users->price3}}.00</p>
                                         <p class="font-bold ml-8 text-md text-right">Qty. {{$users->container3}}</p>
                                     </div>
                                 </div>
@@ -146,7 +148,8 @@
                                         </div>
                                     </div>
                                     <div class="w-5/6 flex flex-wrap items-center">
-                                        <p class="font-bold ml-8 text-md text-left w-2/3">18.9 Litter gallon</p>
+                                        <p class="font-bold ml-8 text-md text-left sm:w-auto w-full">18.9 Litter gallon</p>
+                                        <p class="font-bold ml-8 text-md text-right font-bold text-purple">P {{$users->price4}}.00</p>
                                         <p class="font-bold ml-8 text-md text-right">Qty. {{$users->container4}}</p>
                                     </div>
                                 </div>
@@ -187,7 +190,11 @@
                                 <p class="w-4/5 text-lg"><b>Total</b></p>
                                 <p class="w-1/5 text-lg"><b>{{$users->totalprice}}</b></p>
                             </div>
-                            <button type="submit" form="timeform" class="w-full my-2 py-1 rounded-lg bg-green-400 text-xl text-white">Place Order</button>
+                            <button type="submit" form="timeform" class="w-full my-2 py-1 rounded-lg bg-green-400 text-xl text-white"
+                            @if ($users->count > 0)
+                                disabled
+                            @endif
+                            >Place Order</button>
                         </div>
                     </div>
                 </div>

@@ -9,11 +9,13 @@ use Illuminate\Http\Request;
 class placeOrderController extends Controller
 {
 
+    public int $transaccount = 2;
     public function View (){
         $session_email = session('userID');
         $customer_data = Customer::where('userID','=',$session_email)->first();
-
-
+        $count = transaction::where('userID','=',$session_email)->where('status','=',"pending")->count();
+        $transaccount = $count;
+        $customer_data->count = $count;
         $price1 = 10;
         $price2 = 25;
         $price3 = 35;
@@ -107,7 +109,7 @@ class placeOrderController extends Controller
         $transaction->address = $customer_data->address;
         $transaction->contactNumber = $customer_data->contactNumber;
         $transaction->prefferedTime = $ptime;
-        $transaction->status = "pending";
+        $transaction->status = "Pending";
         $transaction->container1 = $customer_data->container1;
         $transaction->container2 = $customer_data->container2;
         $transaction->container3 = $customer_data->container3;
@@ -115,9 +117,7 @@ class placeOrderController extends Controller
         $transaction->price = $customer_data->totalprice;
         $transaction->save();
 
-        return back()->withErrors([
-            'error' => 'Registered Successfully.',
-        ])->onlyInput('email');
+        return redirect()->route('activeorder');
 
     }
 
