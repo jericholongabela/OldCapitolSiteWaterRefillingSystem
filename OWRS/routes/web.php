@@ -9,6 +9,7 @@ use App\Http\Controllers\ContainerEditor;
 use App\Http\Controllers\PersonalInfoEditor;
 use App\Http\Controllers\placeOrderController;
 use App\Http\Controllers\ActiveOrderController;
+use App\Http\Controllers\viewTransactionController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -31,4 +32,5 @@ Route::post('/edit_personalin_formation', [PersonalInfoEditor::class, 'update'])
 Route::get('/place-order', [placeOrderController::class, 'view']);
 Route::post('/placingyourorder', [placeOrderController::class, 'transact']);
 Route::get('/active-order', [ActiveOrderController::class, 'view']);
+Route::get('/viewtransaction', [viewTransactionController::class, 'view']);
 
