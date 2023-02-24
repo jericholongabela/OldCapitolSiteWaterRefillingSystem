@@ -66,6 +66,7 @@ class ActiveOrderController extends Controller
 
         return view('activeorder',['transaction'=>$transaction, 'time'=>$time]);
     }
+
     public function cancel(){
         $id = session('transacID');
         $transaction = transaction::find($id);
