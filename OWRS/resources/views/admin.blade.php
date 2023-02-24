@@ -22,19 +22,19 @@
                 <div class="w-96 grid grid-cols-3">
                     <div>
                         <div class="w-24 h-24 rounded-md border-4 border-red-500 mx-auto flex justify-center items-center hover:-translate-y-0.5 shadow-lg">
-                            <p class="text-6xl">3</p>
+                            <p class="text-6xl">{{$pending}}</p>
                         </div>
                         <p class="text-center font-bold">On Queue</p>
                     </div>
                     <div>
                         <div class="w-24 h-24 rounded-md border-4 border-amber-500 mx-auto flex justify-center items-center hover:-translate-y-0.5 shadow-lg">
-                            <p class="text-6xl">3</p>
+                            <p class="text-6xl">{{$proccessing}}</p>
                         </div>
                         <p class="text-center font-bold">Processing</p>
                     </div>
                     <div>
                         <div class="w-24 h-24 rounded-md border-4 border-green-400 mx-auto flex justify-center items-center hover:-translate-y-0.5 shadow-lg">
-                            <p class="text-6xl">3</p>
+                            <p class="text-6xl">{{$todeliver}}</p>
                         </div>
                         <p class="text-center font-bold">To Deliver</p>
                     </div>
@@ -49,7 +49,7 @@
                     <div class="w-full rounded-xl border shadow-xl mx-15 my-8">
                         <div class="sm:ml-8 ml-4 flex flex-row my-2 flex-wrap justify-evenly items-center font-semibold">
                             <p class="text-lg my-2">ayaya ayaya ayaya ayaya </p>
-                            <p class="text-lg my-2">January 31, 2024 </p>        
+                            <p class="text-lg my-2">January 31, 2024 </p>
                             <div class="flex justify-center">
                                 <div>
                                     <div class="relative" data-te-dropdown-ref>

@@ -13,7 +13,7 @@ class placeOrderController extends Controller
     public function View (){
         $session_email = session('userID');
         $customer_data = Customer::where('userID','=',$session_email)->first();
-        $count = transaction::where('userID','=',$session_email)->where('status','=',"pending")->count();
+        $count = transaction::where('userID','=',$session_email)->where('status','=',"Pending")->count();
         $transaccount = $count;
         $customer_data->count = $count;
         $price1 = 10;
@@ -22,10 +22,19 @@ class placeOrderController extends Controller
         $price4 = 40;
         $totalprice = 0;
 
-        $transaction = transaction::where('userID','=',$session_email)->where('status','=',"pending")->first();
+        $transaction = transaction::where('userID','=',$session_email)->where('status','=',"Pending")->first();
         if($transaction == NULL){
-            $transaction = transaction::where('userID','=',$session_email)->where('status','=',"cancelled")->first();
-            $transaction->status = "Cancelled";
+            $transaction = transaction::where('userID','=',$session_email)->where('status','=',"Cancelled")->first();
+
+            if($transaction != NULL){
+                $time = $transaction->prefferedTime;
+            }
+            else{
+                $time = "No Order";
+            }
+        }
+        else{
+            $time = $transaction->prefferedTime;
         }
 
         if($customer_data->container1 != NULL){
@@ -56,7 +65,7 @@ class placeOrderController extends Controller
             $customer_data->price4 = 0;
 
         $customer_data->totalprice  = $totalprice;
-        return View('placeordertest',['users'=>$customer_data, 'transaction'=>$transaction]);
+        return View('placeordertest',['users'=>$customer_data, 'transaction'=>$transaction, 'time'=>$time]);
     }
 
     public function transact(Request $request){

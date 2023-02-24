@@ -37,7 +37,7 @@
     <div class="w-full">
         <div id="body" >
 
-            <x-Header time="{{$transaction->prefferedTime}}"/>
+            <x-Header time="{{$time}}"/>
         @error('error')
             <p class="text-green-500 text-s font-bold italic text-center pt-4">{{ $message }}</p>
         @enderror

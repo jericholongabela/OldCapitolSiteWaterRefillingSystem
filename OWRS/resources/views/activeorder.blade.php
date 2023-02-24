@@ -8,10 +8,12 @@
     @vite('resources/css/app.css')
 </head>
 <body>
-    <div class="h-full w-full">
-        <x-Header time="{{$transaction->prefferedTime}}"/>
+    <div class="h-screen w-full">
+        <x-Header time="{{$time}}"/>
+        @if ($transaction != NULL)
     <div class="flex flex-wrap justify-between">
         <div class="sm:w-2/3 w-full mt-6">
+
             <div name="transaction-details-table" class="mx-5 border-2 rounded-lg border-neutral-600">
                 <div class="flex flex-row justify-between border-b-2 px-5 border-neutral-600">
                     <h3 class="text-red-500"><b>Transaction Number: {{$transaction->refID}}</b></h3>
@@ -107,6 +109,12 @@
                 </div>
             </div>
         </div>
+        @endif
+        @if ($transaction == NULL)
+        <div class="h-full w-full flex justify-center items-center">
+            <h1>No Orders yet</h1>
+        </div>
+        @endif
     </div>
 </body>
 </html>

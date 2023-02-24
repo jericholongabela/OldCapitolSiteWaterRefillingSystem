@@ -11,11 +11,22 @@ class ActiveOrderController extends Controller
         $session_email = session('userID');
 
 
-        $transaction = transaction::where('userID','=',$session_email)->where('status','=',"pending")->first();
+        $transaction = transaction::where('userID','=',$session_email)->where('status','=',"Pending")->first();
         if($transaction == NULL){
-            $transaction = transaction::where('userID','=',$session_email)->where('status','=',"cancelled")->first();
+            $transaction = transaction::where('userID','=',$session_email)->where('status','=',"Cancelled")->first();
+
+            if($transaction != NULL){
+                $time = $transaction->prefferedTime;
+            }
+            else{
+                $time = "No Order";
+            }
         }
-        $request->session()->put('transacID', $transaction->refID);
+        else{
+            $time = $transaction->prefferedTime;
+        }
+        if($transaction != NULL){
+            $request->session()->put('transacID', $transaction->refID);
 
         $price1 = 10;
         $price2 = 25;
@@ -51,7 +62,9 @@ class ActiveOrderController extends Controller
             $transaction->price4 = 0;
 
         $transaction->totalprice  = $totalprice;
-        return view('activeorder',['transaction'=>$transaction]);
+        }
+
+        return view('activeorder',['transaction'=>$transaction, 'time'=>$time]);
     }
     public function cancel(){
         $id = session('transacID');

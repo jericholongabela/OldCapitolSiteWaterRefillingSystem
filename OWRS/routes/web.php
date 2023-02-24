@@ -11,6 +11,7 @@ use App\Http\Controllers\placeOrderController;
 use App\Http\Controllers\ActiveOrderController;
 use App\Http\Controllers\viewTransactionController;
 use App\Http\Controllers\adminController;
+use App\Http\Controllers\admin;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -35,4 +36,5 @@ Route::post('/placingyourorder', [placeOrderController::class, 'transact'])->mid
 Route::get('/active-order', [ActiveOrderController::class, 'view'])->middleware('loginchecker')->name('activeorder');
 Route::get('/viewtransaction', [viewTransactionController::class, 'view'])->middleware('loginchecker');
 Route::get('/cancellingorder', [ActiveOrderController::class, 'cancel'])->middleware('loginchecker');
+Route::get('/admin', [admin::class, 'view'])->name('admin')->middleware('loginchecker');
 

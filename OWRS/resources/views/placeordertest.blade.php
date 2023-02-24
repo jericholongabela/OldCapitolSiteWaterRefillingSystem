@@ -30,7 +30,7 @@
 </head>
 <body>
     <div class="w-full body">
-        <x-Header time="{{$transaction->prefferedTime}}"/>
+        <x-Header time="{{$time}}"/>
         <div>
             <div class="flex flex-wrap">
 

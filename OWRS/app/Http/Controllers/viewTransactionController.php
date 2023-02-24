@@ -15,9 +15,19 @@ class viewTransactionController extends Controller
         $history = transaction::where('userID','=',$session_email)->get();
         $transaction = transaction::where('userID','=',$session_email)->where('status','=',"pending")->first();
         if($transaction == NULL){
-            $transaction = transaction::where('userID','=',$session_email)->where('status','=',"cancelled")->first();
+            $transaction = transaction::where('userID','=',$session_email)->where('status','=',"Cancelled")->first();
+
+            if($transaction != NULL){
+                $time = $transaction->prefferedTime;
+            }
+            else{
+                $time = "No Order";
+            }
+        }
+        else{
+            $time = $transaction->prefferedTime;
         }
 
-        return view('viewtransaction',['history'=>$history, 'transaction'=>$transaction]);
+        return view('viewtransaction',['history'=>$history, 'transaction'=>$time]);
     }
 }

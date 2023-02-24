@@ -14,11 +14,21 @@ class profilepageController extends Controller
         $customer_data = Customer::where('userID','=',$session_email)->first();
 
 
-        $transaction = transaction::where('userID','=',$session_email)->where('status','=',"pending")->first();
+        $transaction = transaction::where('userID','=',$session_email)->where('status','=',"Pending")->first();
         if($transaction == NULL){
-            $transaction = transaction::where('userID','=',$session_email)->where('status','=',"cancelled")->first();
+            $transaction = transaction::where('userID','=',$session_email)->where('status','=',"Cancelled")->first();
+
+            if($transaction != NULL){
+                $time = $transaction->prefferedTime;
+            }
+            else{
+                $time = "No Order";
+            }
+        }
+        else{
+            $time = $transaction->prefferedTime;
         }
 
-        return view('profilepage',['users'=>$customer_data, 'transaction'=>$transaction]);
+        return view('profilepage',['users'=>$customer_data, 'transaction'=>$transaction, 'time'=>$time]);
     }
 }

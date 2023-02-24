@@ -17,7 +17,7 @@
 </head>
 <body>
     <div class="w-full h-screen">
-        <x-Header time="{{$transaction->prefferedTime}}"/>
+        <x-Header time="{{$transaction}}"/>
         <div class="mt-5">
             <p class="text-lg font-bold sm:ml-12 text-center sm:text-left"> Transaction History: </p>
                 <!-- While Loop -->
