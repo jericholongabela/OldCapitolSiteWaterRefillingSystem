@@ -20,7 +20,7 @@ class admin extends Controller
         if($todeliver == NULL){
             $todeliver = 0;
         }
-
-        return view('admin',['pending'=>$pending, 'proccessing'=>$proccessing, 'todeliver'=>$todeliver]);
+        $alltransaction = transaction::all();
+        return view('admin',['pending'=>$pending, 'proccessing'=>$proccessing, 'todeliver'=>$todeliver, 'transaction'=>$alltransaction]);
     }
 }

@@ -13,6 +13,51 @@
 
     @vite('resources/css/app.css')
     <link rel="stylesheet" href="{{url('/css/login.css')}}">
+    <style>
+        .dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+    </style>
 </head>
 <body>
     <div class="w-full h-screen">
@@ -45,80 +90,34 @@
             <p class="text-lg font-bold sm:ml-12 text-center sm:text-left"> List of current active orders: </p>
                 <!-- While Loop -->
                 <div class="flex flex-row justify-center">
-                <div class="md:w-5/6 w-full mx-15 hover:scale-105 transition">
-                    <div class="w-full rounded-xl border shadow-xl mx-15 my-8">
-                        <div class="sm:ml-8 ml-4 flex flex-row my-2 flex-wrap justify-evenly items-center font-semibold">
-                            <p class="text-lg my-2">ayaya ayaya ayaya ayaya </p>
-                            <p class="text-lg my-2">January 31, 2024 </p>
-                            <div class="flex justify-center">
-                                <div>
-                                    <div class="relative" data-te-dropdown-ref>
-                                    <button
-                                        class="flex items-center whitespace-nowrap rounded bg-primary px-6 pt-2.5 pb-2 text-lg font-medium uppercase leading-normal transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] motion-reduce:transition-none"
-                                        type="button"
-                                        id="dropdownMenuButton1"
-                                        data-te-dropdown-toggle-ref
-                                        aria-expanded="false"
-                                        data-te-ripple-init
-                                        data-te-ripple-color="light">
-                                        {Status}
-                                        <span class="ml-2 w-2">
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            viewBox="0 0 20 20"
-                                            fill="currentColor"
-                                            class="h-5 w-5">
-                                            <path
-                                            fill-rule="evenodd"
-                                            d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-                                            clip-rule="evenodd" />
-                                        </svg>
-                                        </span>
-                                    </button>
-                                    <ul class="absolute z-[1000] float-left m-0 hidden min-w-max list-none overflow-hidden rounded-lg border-none bg-white bg-clip-padding text-left text-base shadow-lg dark:bg-neutral-700 [&[data-te-dropdown-show]]:block"
-                                        aria-labelledby="dropdownMenuButton1"
-                                        data-te-dropdown-menu-ref>
-                                        <li>
-                                        <a class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
-                                            href="#"
-                                            data-te-dropdown-item-ref
-                                        >On Queue
-                                        </a>
-                                        </li>
-                                        <li>
-                                        <a class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
-                                            href="#"
-                                            data-te-dropdown-item-ref
-                                        >Processing
-                                        </a>
-                                        </li>
-                                        <li>
-                                        <a class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
-                                            href="#"
-                                            data-te-dropdown-item-ref
-                                        >To Deliver
-                                        </a>
-                                        <a class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
-                                            href="#"
-                                            data-te-dropdown-item-ref
-                                        >Delivered
-                                        </a>
-                                        </li>
-                                    </ul>
+                    <div class="md:w-5/6 w-full mx-15">
+                    @if ($transaction != NULL)
+                        @foreach ($transaction as $item)
+
+                        <div class="w-full rounded-xl border shadow-xl mx-15 my-8 hover:scale-105 transition">
+                            <div class="sm:ml-8 ml-4 flex flex-row my-2 flex-wrap justify-evenly items-center font-semibold">
+                                <p class="text-lg my-2">{{$item->address}} </p>
+                                <p class="text-lg my-2">{{$item->created_at}} </p>
+                                <div class="dropdown">
+                                    <button onclick="myFunction()" class="dropbtn">{{$item->status}}</button>
+                                    <div id="myDropdown" class="dropdown-content">
+                                      <a href="#">Processing</a>
+                                      <a href="#">To Deliver</a>
+                                      <a href="#">Delivered</a>
                                     </div>
-                                </div>
+                                  </div>
+                                <button id="buttonstatus" type="button" class="sm:w-36 sm:h-12 w-32 h-12 bg-purple text-lg text-slate-50 my-2 rounded-lg">View Order</button>
                             </div>
-                            <button id="buttonstatus" type="button" class="sm:w-36 sm:h-12 w-32 h-12 bg-purple text-lg text-slate-50 my-2 rounded-lg">View Order</button>
                         </div>
-                    </div>
+
+                        @endforeach
+                    @endif
                 </div>
         </div>
     </div>
-    <script src="{{url('/js/homepage.js')}}">
-        const dropdownElementList = [].slice.call(document.querySelectorAll('[data-te-dropdown-toggle-ref]'));
-        const dropdownList = dropdownElementList.map((dropdownToggleEl) => {
-            return new te.Dropdown(dropdownToggleEl);
-        });
-    </script>
+
+
+    <script src="{{url('/js/admin.js')}}"></script>
+    <script src="{{url('/js/profile.js')}}"></script>
 </body>
 </html>
