@@ -33,7 +33,7 @@
                         @if ($transaction->container1 != NULL)
                             <div class="flex flex-row h-16 content-center my-1">
                                 <img src="{{url('/assets/container1.jpg')}}" class="object-contain w-1/12" alt="">
-                                <p class="self-center text-neutral-600 w-7/12"><b>4 Litter container</b></p>
+                                <p class="self-center text-neutral-600 w-7/12"><b>4 Liter container</b></p>
                                 <p class="self-center text-purple w-2/12"><b>P {{$transaction->price1}}</b></p>
                                 <p class="self-center text-neutral-600 w-2/12"><b>Qty.{{$transaction->container1}}</b></p>
                             </div>
@@ -41,7 +41,7 @@
                         @if ($transaction->container2 != NULL)
                             <div class="flex flex-row h-16 content-center my-1">
                                 <img src="{{url('/assets/container2.jpg')}}" class="object-contain w-1/12" alt="">
-                                <p class="self-center text-neutral-600 w-7/12"><b>10 Litter mini water container</b></p>
+                                <p class="self-center text-neutral-600 w-7/12"><b>10 Liter mini water container</b></p>
                                 <p class="self-center text-purple w-2/12"><b>P {{$transaction->price2}}</b></p>
                                 <p class="self-center text-neutral-600 w-2/12"><b>Qty.{{$transaction->container2}}</b></p>
                             </div>
@@ -49,7 +49,7 @@
                         @if ($transaction->container3 != NULL)
                             <div class="flex flex-row h-16 content-center my-1">
                                 <img src="{{url('/assets/container3.jpg')}}" class="object-contain w-1/12" alt="">
-                                <p class="self-center text-neutral-600 w-7/12"><b>20 Litter container jug</b></p>
+                                <p class="self-center text-neutral-600 w-7/12"><b>20 Liter container jug</b></p>
                                 <p class="self-center text-purple w-2/12"><b>P {{$transaction->price3}}</b></p>
                                 <p class="self-center text-neutral-600 w-2/12"><b>Qty.{{$transaction->container3}}</b></p>
                             </div>
@@ -57,7 +57,7 @@
                         @if ($transaction->container4 != NULL)
                             <div class="flex flex-row h-16 content-center my-1">
                                 <img src="{{url('/assets/container4.jpg')}}" class="object-contain w-1/12" alt="">
-                                <p class="self-center text-neutral-600 w-7/12"><b>18.9 Litter gallon</b></p>
+                                <p class="self-center text-neutral-600 w-7/12"><b>18.9 Liter gallon</b></p>
                                 <p class="self-center text-purple w-2/12"><b>P {{$transaction->price4}}</b></p>
                                 <p class="self-center text-neutral-600 w-2/12"><b>Qty.{{$transaction->container4}}</b></p>
                             </div>
@@ -78,19 +78,19 @@
                     <div class="px-5 py-1.5 h-full">
                         <p class="text-lg"><b>Subtotal</b></p>
                         <div class="flex flex-row px-5">
-                            <p class="w-4/5 text-sm text-neutral-600"><b>4 Litter container</b></p>
+                            <p class="w-4/5 text-sm text-neutral-600"><b>4 Liter container</b></p>
                             <p class="w-1/5 text-sm text-neutral-600"><b>P{{$transaction->price1}}.00</b></p>
                         </div>
                         <div class="flex flex-row px-5">
-                            <p class="w-4/5 text-sm text-neutral-600"><b>10 Litter mini water container</b></p>
+                            <p class="w-4/5 text-sm text-neutral-600"><b>10 Liter mini water container</b></p>
                             <p class="w-1/5 text-sm text-neutral-600"><b>P{{$transaction->price2}}.00</b></p>
                         </div>
                         <div class="flex flex-row px-5">
-                            <p class="w-4/5 text-sm text-neutral-600"><b>20 Litter container jug</b></p>
+                            <p class="w-4/5 text-sm text-neutral-600"><b>20 Liter container jug</b></p>
                             <p class="w-1/5 text-sm text-neutral-600"><b>{{$transaction->price3}}.00</b></p>
                         </div>
                         <div class="flex flex-row px-5">
-                            <p class="w-4/5 text-sm text-neutral-600"><b>18.9 Litter gallon</b></p>
+                            <p class="w-4/5 text-sm text-neutral-600"><b>18.9 Liter gallon</b></p>
                             <p class="w-1/5 text-sm text-neutral-600"><b>{{$transaction->price4}}.00</b></p>
                         </div>
                         <br>

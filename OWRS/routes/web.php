@@ -1,3 +1,4 @@
+<?php
 
 /*
 |--------------------------------------------------------------------------
@@ -9,8 +10,6 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-<?php
-
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomepageController;
 use App\Http\Controllers\Authentication_Controller;

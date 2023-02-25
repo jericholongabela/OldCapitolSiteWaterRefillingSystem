@@ -94,7 +94,7 @@
                                         </div>
                                     </div>
                                     <div class="w-5/6 flex flex-wrap items-center">
-                                        <p class="font-bold ml-8 text-md text-left sm:w-auto w-full">4 Litter container</p>
+                                        <p class="font-bold ml-8 text-md text-left sm:w-auto w-full">4 Liter container</p>
                                         <p class="font-bold ml-8 text-md text-right font-bold text-purple">P {{$users->price1}}.00</p>
                                         <p class="font-bold ml-8 text-md text-right">Qty. {{$users->container1}}</p>
                                     </div>
@@ -111,7 +111,7 @@
                                         </div>
                                     </div>
                                     <div class="w-5/6 flex flex-wrap items-center">
-                                        <p class="font-bold ml-8 text-md text-left sm:w-auto w-full">10 Litter mini water container</p>
+                                        <p class="font-bold ml-8 text-md text-left sm:w-auto w-full">10 Liter mini water container</p>
                                         <p class="font-bold ml-8 text-md text-right font-bold text-purple ,d:1/2">P {{$users->price2}}.00</p>
                                         <p class="font-bold ml-8 text-md text-right">Qty. {{$users->container2}} </p>
                                     </div>
@@ -128,7 +128,7 @@
                                         </div>
                                     </div>
                                     <div class="w-5/6 flex flex-wrap items-center">
-                                        <p class="font-bold ml-8 text-md text-left sm:w-auto w-full">20 Litter container jug</p>
+                                        <p class="font-bold ml-8 text-md text-left sm:w-auto w-full">20 Liter container jug</p>
                                         <p class="font-bold ml-8 text-md text-right font-bold text-purple">P {{$users->price3}}.00</p>
                                         <p class="font-bold ml-8 text-md text-right">Qty. {{$users->container3}}</p>
                                     </div>
@@ -145,7 +145,7 @@
                                         </div>
                                     </div>
                                     <div class="w-5/6 flex flex-wrap items-center">
-                                        <p class="font-bold ml-8 text-md text-left sm:w-auto w-full">18.9 Litter gallon</p>
+                                        <p class="font-bold ml-8 text-md text-left sm:w-auto w-full">18.9 Liter gallon</p>
                                         <p class="font-bold ml-8 text-md text-right font-bold text-purple">P {{$users->price4}}.00</p>
                                         <p class="font-bold ml-8 text-md text-right">Qty. {{$users->container4}}</p>
                                     </div>
@@ -163,19 +163,19 @@
                         <div class="px-5 py-1.5 h-full">
                             <p class="text-lg"><b>Subtotal</b></p>
                             <div class="flex flex-row px-5">
-                                <p class="w-4/5 text-sm text-neutral-600"><b>4 Litter container</b></p>
+                                <p class="w-4/5 text-sm text-neutral-600"><b>4 Liter container</b></p>
                                 <p class="w-1/5 text-sm text-neutral-600"><b>{{$users->price1}}</b></p>
                             </div>
                             <div class="flex flex-row px-5">
-                                <p class="w-4/5 text-sm text-neutral-600"><b>10 Litter mini water container</b></p>
+                                <p class="w-4/5 text-sm text-neutral-600"><b>10 Liter mini water container</b></p>
                                 <p class="w-1/5 text-sm text-neutral-600"><b>{{$users->price2}}</b></p>
                             </div>
                             <div class="flex flex-row px-5">
-                                <p class="w-4/5 text-sm text-neutral-600"><b>20 Litter container jug</b></p>
+                                <p class="w-4/5 text-sm text-neutral-600"><b>20 Liter container jug</b></p>
                                 <p class="w-1/5 text-sm text-neutral-600"><b>{{$users->price3}}</b></p>
                             </div>
                             <div class="flex flex-row px-5">
-                                <p class="w-4/5 text-sm text-neutral-600"><b>18.9 Litter gallon</b></p>
+                                <p class="w-4/5 text-sm text-neutral-600"><b>18.9 Liter gallon</b></p>
                                 <p class="w-1/5 text-sm text-neutral-600"><b>{{$users->price4}}</b></p>
                             </div>
                             <br>

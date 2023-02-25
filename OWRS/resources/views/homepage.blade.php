@@ -70,12 +70,12 @@
                         </button>
                         <button id="buttontwo" class="w-72 h-72 bg-sky-300 rounded-xl shrink-0 shadow-lg hover:drop-shadow-xl hover:scale-105 m-6 transition">
                             <div class="flex w-full h-full items-center">
-                                <p class="text-4xl font-bold text-left m-3">Some shit about water</p>
+                                <p class="text-4xl font-bold text-left m-3">Why do you need to drink a purified water?</p>
                             </div>
                         </button>
                         <button id="buttonthree" class="w-72 h-72 bg-sky-300 rounded-xl shrink-0 shadow-lg hover:drop-shadow-xl hover:scale-105 m-6 transition">
                             <div class="flex w-full h-full items-center">
-                                <p class="text-4xl font-bold text-left m-3">Some shit about water</p>
+                                <p class="text-4xl font-bold text-left m-3">How is our water being treated?</p>
                             </div>
                         </button>
                         <button id="buttonfour" class="w-72 h-72 bg-sky-300 rounded-xl shrink-0 shadow-lg hover:drop-shadow-xl hover:scale-105 m-6 transition">

@@ -28,8 +28,11 @@
                     <div class="sm:ml-8 ml-4 flex flex-row my-2 justify-evenly font-semibold">
                         <p class="text-lg my-2">Transaction Number:{{$item->refID}} </p>
                         <p class="text-lg my-2">Date: {{$item->created_at}}</p>
-                        <p class="text-lg my-2">Price: </p>
-                        <p class="text-lg my-2">Delivered: </p>
+                        <p class="text-lg my-2">Price: P75.00</p>
+                        <div class="flex flex-row">
+                            <p class="text-lg my-2 pr-4">Delivered</p>
+                            <div class=" h-4 w-12 bg-green-400 self-center"></div>
+                        </div>
                     </div>
                 </div>
                    @endforeach

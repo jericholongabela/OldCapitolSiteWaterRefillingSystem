@@ -77,7 +77,7 @@
                                         </div>
                                     </div>
                                     <div class="w-5/6 flex flex-wrap items-center">
-                                        <p class="font-bold ml-8 text-md text-left w-2/3">4 Litter container</p>
+                                        <p class="font-bold ml-8 text-md text-left w-2/3">4 Liter container</p>
                                         <p class="font-bold ml-8 text-md text-right">{{$users->container1}}</p>
                                     </div>
                                 </div>
@@ -93,7 +93,7 @@
                                         </div>
                                     </div>
                                     <div class="w-5/6 flex flex-wrap items-center">
-                                        <p class="font-bold ml-8 text-md text-left w-2/3">10 Litter mini water container</p>
+                                        <p class="font-bold ml-8 text-md text-left w-2/3">10 Liter mini water container</p>
                                         <p class="font-bold ml-8 text-md text-right">{{$users->container2}}</p>
                                     </div>
                                 </div>
@@ -109,7 +109,7 @@
                                         </div>
                                     </div>
                                     <div class="w-5/6 flex flex-wrap items-center">
-                                        <p class="font-bold ml-8 text-md text-left w-2/3">20 Litter container jug</p>
+                                        <p class="font-bold ml-8 text-md text-left w-2/3">20 Liter container jug</p>
                                         <p class="font-bold ml-8 text-md text-right">{{$users->container3}}</p>
                                     </div>
                                 </div>
@@ -125,7 +125,7 @@
                                         </div>
                                     </div>
                                     <div class="w-5/6 flex flex-wrap items-center">
-                                        <p class="font-bold ml-8 text-md text-left w-2/3">18.9 Litter gallon</p>
+                                        <p class="font-bold ml-8 text-md text-left w-2/3">18.9 Liter gallon</p>
                                         <p class="font-bold ml-8 text-md text-right">{{$users->container4}}</p>
                                     </div>
                                 </div>
