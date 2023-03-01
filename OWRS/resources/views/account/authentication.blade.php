@@ -46,7 +46,7 @@
     <div id="maincontainer" class="flex w-full h-screen md:items-center md:justify-center transition">
         <div class="flex flex-wrap w-full md:w-4/5  md:h-4/5">
             <div class="flex w-full md:w-1/2 items-center justify-center">
-                <h1 class="text-center text-4xl font-bold m-6">Old Capitol Site's Online Purified-Water Delivery System</h1>
+                <h1 class="text-center text-4xl font-bold md:m-6 mx-12">Old Capitol Site's Online Purified-Water Delivery System</h1>
             </div>
             <div class=" md:w-1/2 md:flex md:items-center md:justify-center w-4/5 mx-auto hover:drop-shadow-xl">
                 <div class="w-4/5 shadow-xl rounded-3xl mx-auto hover:scale-105 transition">

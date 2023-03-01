@@ -44,9 +44,9 @@
         <div class="flex justify-center items-center">
 
             <div class="w-full">
-                <div class="md:w-2/3 w-full mx-auto">
-                    <div class="w-full mt-4 hover:scale-105 transition">
-                        <div class="w-4/5 rounded-xl border border-gray-400 shadow-xl mx-auto my-8 overflow-hidden">
+                <div class="md:w-5/6 w-full mx-auto">
+                    <div class="w-full mt-4">
+                        <div class="w-4/5 rounded-xl border border-gray-400 hover:scale-105 transition shadow-xl mx-auto my-8 overflow-hidden">
                             <div class="w-full border-b border-gray-400 flex">
                                 <p class="font-bold text-lg text-green-500  ml-2 basis-11/12">Your personal information</p>
                                 <button id="edit" type="button" class="font-bold text-center basis-1/12 mr-4 hover:scale-110 text-sm">Edit</button>
@@ -60,9 +60,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="md:w-2/3 w-full mx-auto">
-                    <div class="w-full mt-4 hover:scale-105 transition">
-                        <div class="w-4/5 rounded-xl border border-gray-400 shadow-xl mx-auto my-8">
+                <div class="md:w-5/6 w-full mx-auto">
+                    <div class="w-full mt-4">
+                        <div class="w-4/5 rounded-xl border border-gray-400 hover:scale-105 transition shadow-xl mx-auto my-8">
                             <div class="w-full border-b border-gray-400 flex">
                                 <p class="font-bold text-lg text-amber-500  ml-2 basis-11/12">Your default container</p>
                                 <button id="edit1" class="font-bold text-center basis-1/12 mr-4 hover:scale-110 text-sm " type="button">Edit</button>
