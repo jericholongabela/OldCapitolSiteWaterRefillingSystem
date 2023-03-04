@@ -20,22 +20,19 @@
         <x-Header time="{{$transaction}}"/>
         <div class="mt-5">
             <p class="text-lg font-bold sm:ml-12 text-center sm:text-left"> Transaction History: </p>
-                <!-- While Loop -->
+
                 <div class="flex flex-row justify-center">
-                <div class="md:w-5/6 w-full mx-15">
-                   @foreach ($history as $item)
-                   <div class="w-full rounded-xl border shadow-xl mx-15 my-8 hover:scale-105 transition">
-                    <div class="sm:ml-8 ml-4 flex flex-row my-2 justify-evenly font-semibold">
-                        <p class="text-lg my-2">Transaction Number:{{$item->refID}} </p>
-                        <p class="text-lg my-2">Date: {{$item->created_at}}</p>
-                        <p class="text-lg my-2">Price: P75.00</p>
-                        <div class="flex flex-row">
-                            <p class="text-lg my-2 pr-4">Delivered</p>
-                            <div class=" h-4 w-12 bg-green-400 self-center"></div>
-                        </div>
+                <div class="md:w-5/6 w-10/12">
+                    @foreach ($history as $item)
+                   <div class="w-full rounded-xl  shadow-xl mx-15 my-8 hover:scale-105 transition">
+                    <div class="sm:ml-8 ml-4 flex flex-row my-2 justify-evenly">
+                        <p class="text-lg my-2 mx-2"><b>Transaction Number: </b>{{$item->refID}} </p>
+                        <p class="text-lg my-2 mx-2"><b>Date: </b>{{$item->created_at}}</p>
+                        <p class="text-lg my-2 mx-2"><b>Price: </b> {{$item->price}}</p>
+                        <p class="text-lg my-2 mx-2"><b>Status: </b>{{$item->status}}</p>
                     </div>
                 </div>
-                   @endforeach
+                @endforeach
                 </div>
         </div>
     </div>

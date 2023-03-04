@@ -34,8 +34,8 @@
         <div>
             <div class="flex flex-wrap">
 
-                <div class="md:w-2/3 w-full mt-4 hover:scale-105 transition">
-                    <div class="w-4/5 rounded-xl border shadow-xl mx-auto my-8">
+                <div class="md:w-2/3 w-full md:mt-4">
+                    <div class="w-4/5 rounded-xl border shadow-xl mx-auto mt-8 hover:scale-105 transition">
                         <div class="w-full border-b flex">
                             <p class="font-bold text-lg text-red-500  ml-2 basis-11/12">Step 1: Verify your information</p>
                             <button class="font-bold text-center basis-1/12 mr-4 hover:scale-110 text-sm" type="button" id="edit1">Edit</button>
@@ -49,8 +49,8 @@
                     </div>
                 </div>
 
-                <div class="md:w-1/3 w-full md:mt-4 hover:scale-105 transition">
-                    <div class="w-4/5 rounded-xl border shadow-xl mx-auto my-8">
+                <div class="md:w-1/3 w-full md:mt-4">
+                    <div class="w-4/5 rounded-xl border shadow-xl mx-auto mt-8 hover:scale-105 transition">
                         <div class="w-full border-b flex">
                             <p class="font-bold text-lg text-amber-500 ml-2 basis-11/12">Step 2: Set time for delivery</p>
                         </div>
@@ -78,8 +78,8 @@
 
             <div class="flex flex-wrap">
 
-                <div class="md:w-2/3 w-full mt-4 hover:scale-105 transition">
-                    <div class="w-4/5 rounded-xl border shadow-xl mx-auto my-8">
+                <div class="md:w-2/3 w-full mt-4">
+                    <div class="w-4/5 rounded-xl border shadow-xl mx-auto mt-8 hover:scale-105 transition">
                         <div class="w-full border-b flex">
                             <p class="font-bold text-lg text-green-500  ml-2 basis-11/12">Step 3: View order container</p>
                             <button class="font-bold text-center basis-1/12 mr-4 hover:scale-110 text-sm" type="button" id="edit2">Edit</button>
@@ -155,8 +155,8 @@
                     </div>
                 </div>
 
-                <div class="md:w-1/3 w-full md:mt-4 hover:scale-105 transition">
-                    <div class="w-4/5 rounded-xl border shadow-xl mx-auto my-8">
+                <div class="md:w-1/3 w-full md:mt-4 mb-12">
+                    <div class="w-4/5 rounded-xl border shadow-xl mx-auto mt-8 hover:scale-105 transition">
                         <div class="w-full border-b flex">
                             <p class="font-bold text-lg text-sky-500 ml-2 basis-11/12">Step 4: View Order summary</p>
                         </div>

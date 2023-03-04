@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OWRS</title>
+    <title>OWRS - Active Orders</title>
+    <link rel="icon" href="{{'/assets/logo2.png'}}" type="image/x-icon">
     @vite('resources/css/app.css')
+    <link rel="stylesheet" href="{{url('/css/login.css')}}">
 </head>
 <body>
     <div class="h-screen w-full">
@@ -14,10 +16,9 @@
     <div class="flex flex-wrap justify-between">
         <div class="sm:w-2/3 w-full mt-6">
 
-            <div name="transaction-details-table" class="mx-5 border-2 rounded-lg border-neutral-600">
+            <div name="transaction-details-table" class="mx-5 border-2 rounded-lg border-neutral-600 shadow-xl">
                 <div class="flex flex-row justify-between border-b-2 px-5 border-neutral-600">
                     <h3 class="text-red-500"><b>Transaction Number: {{$transaction->refID}}</b></h3>
-                    <button type="button"><b>Edit</b></button>
                 </div>
                 <div class="px-10 mt-1">
                     <h3><b>Your Delivery Information</b></h3>
@@ -71,7 +72,7 @@
                 <div class=" h-10 flex bg-red-500 rounded-lg justify-center sm:mr-5 sm:mx-0 mx-5">
                     <p class="text-white text-xl self-center"><b>{{$transaction->status}}</b></p>
                 </div>
-                <div class="border-2 mt-4 rounded-lg border-neutral-600 sm:mr-5 sm:mx-0 mx-5">
+                <div class="border-2 mt-4 rounded-lg border-neutral-600 sm:mr-5 sm:mx-0 mx-5 shadow-xl">
                     <div class="border-solid border-b-2 border-neutral-600">
                         <h3 class="pl-3 text-green-400"><b>Order Summary</b></h3>
                     </div>
